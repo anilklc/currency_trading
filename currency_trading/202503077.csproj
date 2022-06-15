@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2154AF3-DD75-4889-8EF4-FE205EFBC1D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_202503077</RootNamespace>
+    <AssemblyName>202503077</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alım-Satım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alım-Satım.Designer.cs">
+      <DependentUpon>Alım-Satım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnlikKurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnlikKurlar.Designer.cs">
+      <DependentUpon>AnlikKurlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duyurular.Designer.cs">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaPanel.Designer.cs">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GecmisIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GecmisIslemler.Designer.cs">
+      <DependentUpon>GecmisIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Istatistikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Istatistikler.Designer.cs">
+      <DependentUpon>Istatistikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıDuzenle.Designer.cs">
+      <DependentUpon>KullanıcıDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıOlustur.Designer.cs">
+      <DependentUpon>KullanıcıOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisPaneli.Designer.cs">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaEkle_Cikar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaEkle_Cikar.Designer.cs">
+      <DependentUpon>ParaEkle_Cikar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rapordata.cs">
+      <DependentUpon>rapordata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rapordata.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rapordata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RaporIslemler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporIslemler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="veritabani.cs" />
+    <Compile Include="Rapor_Olusturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor_Olusturma.Designer.cs">
+      <DependentUpon>Rapor_Olusturma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_202503077DataSet.cs">
+      <DependentUpon>_202503077DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_202503077DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_202503077DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alım-Satım.resx">
+      <DependentUpon>Alım-Satım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnlikKurlar.resx">
+      <DependentUpon>AnlikKurlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duyurular.resx">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaPanel.resx">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GecmisIslemler.resx">
+      <DependentUpon>GecmisIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Istatistikler.resx">
+      <DependentUpon>Istatistikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıDuzenle.resx">
+      <DependentUpon>KullanıcıDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıOlustur.resx">
+      <DependentUpon>KullanıcıOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisPaneli.resx">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaEkle_Cikar.resx">
+      <DependentUpon>ParaEkle_Cikar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RaporIslemler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporIslemler.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor_Olusturma.resx">
+      <DependentUpon>Rapor_Olusturma.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="rapordata.xsc">
+      <DependentUpon>rapordata.xsd</DependentUpon>
+    </None>
+    <None Include="rapordata.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rapordata.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="rapordata.xss">
+      <DependentUpon>rapordata.xsd</DependentUpon>
+    </None>
+    <None Include="_202503077DataSet.xsc">
+      <DependentUpon>_202503077DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_202503077DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_202503077DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_202503077DataSet.xss">
+      <DependentUpon>_202503077DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
